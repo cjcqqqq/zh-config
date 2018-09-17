@@ -5,13 +5,13 @@ logging:
 
 spring:
     application:
-        name: zh-admin
+        name: zh-business
     jackson:
         date-format: yyyy-MM-dd HH:mm:ss
         time-zone: GMT+8
         default-property-inclusion: non_null
     datasource:
-        name: zh-admin
+        name: zh-business
         url: jdbc:mysql://127.0.0.1:3306/zh_business?useUnicode=true&characterEncoding=UTF8
         username: zhdbuser
         password: zhdbuser123

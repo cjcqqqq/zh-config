@@ -108,13 +108,14 @@ eureka:
         statusPageUrlPath: /info
         healthCheckUrlPath: /health
         # docker 部署开启,记得将IP修改为部署所在服务器的外网IP
-#        prefer-ip-address: true
-#        ip-address: 127.0.0.1
+        instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+        prefer-ip-address: true
+        ip-address: 10.30.50.148
     client:
         serviceUrl:
 #            defaultZone: http://localhost:8761/eureka/
                     # docker 部署开启,记得将IP修改为部署所在服务器的外网IP
-            defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+            defaultZone: http://${EUREKA_HOST:10.30.50.148}:${EUREKA_PORT:8761}/eureka/
 
 #请求和响应GZIP压缩支持
 feign:

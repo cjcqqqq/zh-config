@@ -65,8 +65,9 @@ eureka:
         ip-address: 10.30.50.148
     client:
         serviceUrl:
+#            defaultZone: http://localhost:8761/eureka/
+                    # docker 部署开启,记得将IP修改为部署所在服务器的外网IP
             defaultZone: http://10.30.50.148:8761/eureka/
-
 # 必须配置
 feign:
   httpclient:

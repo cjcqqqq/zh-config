@@ -37,7 +37,7 @@ spring:
         host: 10.30.50.148
         port: 6379
         pool:
-            max-active: 20
+            max-active: 50
 #        password: 123456
     rabbitmq:
         host: 127.0.0.1

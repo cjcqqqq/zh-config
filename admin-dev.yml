@@ -1,6 +1,6 @@
 logging:
     level:
-#        tk.mybatis: DEBUG
+#        tk.mybatis: DEBUG 11
         com.navinfo.zhonghuan.admin: INFO
 
 spring:

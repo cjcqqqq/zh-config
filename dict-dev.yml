@@ -38,7 +38,7 @@ spring:
         database: 1
 #        host: ${REDIS_HOST:10.30.50.169}
 #        port: ${REDIS_PORT:6379}
-        host: 10.30.50.148
+        host: 10.30.50.55
         port: 6379
         pool:
             max-active: 20
@@ -86,13 +86,13 @@ eureka:
         # docker 部署开启,记得将IP修改为部署所在服务器的外网IP
         instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
         prefer-ip-address: true
-        ip-address: 10.30.50.148
+        ip-address: 10.30.50.55
     client:
         serviceUrl:
 #            defaultZone: http://localhost:8761/eureka/
                     # docker 部署开启,记得将IP修改为部署所在服务器的外网IP
 #            defaultZone: http://${EUREKA_HOST:172.16.1.131}:${EUREKA_PORT:8761}/eureka/
-            defaultZone: http://10.30.50.148:8761/eureka/
+            defaultZone: http://10.30.50.55:8761/eureka/
 
 #请求和响应GZIP压缩支持
 feign:

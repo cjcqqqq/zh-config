@@ -7,7 +7,7 @@ spring:
         default-property-inclusion: non_null
     redis:
         database: 1
-        host: 10.30.50.148
+        host: 10.30.50.55
         port: 6379
         pool:
             max-active: 20
@@ -93,7 +93,7 @@ eureka:
         leaseRenewalIntervalInSeconds: 5
         instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
         prefer-ip-address: true
-        ip-address: 10.30.50.148
+        ip-address: 10.30.50.55
     client:
         serviceUrl:
 #            defaultZone: http://localhost:8761/eureka/

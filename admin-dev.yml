@@ -62,7 +62,7 @@ eureka:
         # docker 部署开启,记得将IP修改为部署所在服务器的外网IP
         instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
         prefer-ip-address: true
-        ip-address: 10.30.50.148
+        ip-address: 10.30.50.55
     client:
         serviceUrl:
 #            defaultZone: http://localhost:8761/eureka/
